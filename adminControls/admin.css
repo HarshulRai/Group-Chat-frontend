@@ -1,18 +1,19 @@
 #main-header{
-    background-color: #2C3639;
+    background-color: #17414e;
 }
 
-.send-btn{
-    width: 60%;
+.submit-btn{
+    width: 30%;
 	height: 40px;
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
 	color: #fff;
-	background: #2C3639;
+	background: #17414e;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
+    margin-bottom: 20px;
 	outline: none;
 	border: none;
 	border-radius: 5px;
@@ -21,7 +22,7 @@
 }
 
 input{
-	width: 60%;
+	width: 50%;
 	height: 40px;
 	background: white;
 	margin: 20px auto;
@@ -44,7 +45,7 @@ input{
 #btn {
     background-color: white;
     border: none;
-    color: #5e6e72;
+    color: #17414e;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -53,11 +54,11 @@ input{
 }
 
 #btn.active {
-    transform: translateX(-140px);
+    transform: translateX(-130px);
 }
 
 nav {
-    background-color: #445052;
+    background-color: #265563;
     position: fixed;
     top: 0;
     right: 0;
@@ -93,14 +94,10 @@ nav a:hover{
 
 nav button{
 	border: none;
-	background-color: #445052;
+	background-color: #265563;
 	color: white;
 	padding: 0;
 	cursor: pointer;
-}
-
-.title{
-    margin-left: 43%;
 }
 
 .empty::-webkit-input-placeholder {
@@ -108,8 +105,47 @@ nav button{
 	font-family: 'Patua One', cursive;
  }
 
- p{
-	margin-bottom: 0;
+ .popup-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	display: none;
+	align-items: center;
+	justify-content: center;
+	
  }
 
+ .popup-container.active{
+	display: block;
+	
+ }
 
+ .popup-message{
+	background-color:white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+	padding: 1rem;
+	margin: 1px auto;
+    width: 300px;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup-message p{
+	color: #24243e;
+	font-family:'Patua One', cursive; ;
+	text-align: center;
+}
+
+#header-title{
+	margin-right: 100px;
+}
+
+.title{
+	margin-left: 35%;
+}

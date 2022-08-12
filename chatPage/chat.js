@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', (e)=>{
             `
         }
 
-        //setInterval(()=>{
+        // setInterval(()=>{
             axios.get(`http://localhost:3000/getMessages?grpId=${grpId}`, { headers: {"Authorization" : token} })
             .then(res=>{
                 //console.log(res)
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', (e)=>{
                     displayMessage(messages[i].name, messages[i].msg, date, time)
                 }
             })
-       // }, 1000)
+    //    }, 1000)
      })
     
 })
@@ -124,5 +124,6 @@ logoutBtn.addEventListener('click', (e)=>{
     localStorage.clear()
     window.location.replace('../LoginPage/login.html')
 })
+
 
 

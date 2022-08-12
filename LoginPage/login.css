@@ -6,13 +6,13 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Patua One', cursive;
-	background: linear-gradient(to bottom, #2C3639, #4c5b5c, #2C3639);
+	background: linear-gradient(to bottom, #7bc9e0, #54c2ca, #90d7ec);
 }
 
 .main-container{
     width: 400px;
     height: 500px;
-    background: red;
+    background: rgb(161, 105, 105);
     overflow: hidden;
 	background-color: #2C3639;
     border-radius: 10px;
